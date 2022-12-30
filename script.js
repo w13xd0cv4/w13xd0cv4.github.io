@@ -1,6 +1,6 @@
 // Obtener credenciales de la API de Twitter
-const TWITTER_API_KEY = "YOUR_API_KEY";
-const TWITTER_API_SECRET = "YOUR_API_SECRET";
+const TWITTER_API_KEY = "NUCp5VTtt0EAmf8KWBhS8dHy3";
+const TWITTER_API_SECRET = "SG9ILv6O5TDOSL6MwTbYP4hZcV7WakPpGDf5khnsCeFsk5MrZ8";
 
 // Función para obtener los temas populares de Twitter en México
 async function getTrends() {
