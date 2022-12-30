@@ -5,7 +5,7 @@ const TWITTER_API_SECRET = "SG9ILv6O5TDOSL6MwTbYP4hZcV7WakPpGDf5khnsCeFsk5MrZ8";
 // Función para obtener los temas populares de Twitter en México
 async function getTrends() {
   // Hacer una solicitud a la API de Twitter para obtener los temas populares
-  const response = await fetch("https://api.twitter.com/1.1/trends/place.json?id=23424900", {
+  const response = await fetch("https://api.twitter.com/1.1/trends/place.json?id=1", {
   headers: {
     "Authorization": `Bearer ${TWITTER_API_KEY}:${TWITTER_API_SECRET}`,
     "Access-Control-Allow-Origin": "*"
