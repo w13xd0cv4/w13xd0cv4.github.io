@@ -31,3 +31,4 @@ for (const trend of trends) {
 
   trendsContainer.appendChild(trendElement);
 }}
+// fin de codigo
