@@ -1,0 +1,27 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+#trends {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.trend {
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.trend h2 {
+  margin: 0;
+}
+
+.trend p {
+  margin: 0;
+  font-size: 0.8em;
+}
