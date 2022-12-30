@@ -6,11 +6,11 @@ const TWITTER_API_SECRET = "SG9ILv6O5TDOSL6MwTbYP4hZcV7WakPpGDf5khnsCeFsk5MrZ8";
 async function getTrends() {
   // Hacer una solicitud a la API de Twitter para obtener los temas populares
   const response = await fetch("https://api.twitter.com/1.1/trends/place.json?id=23424900", {
-    headers: {
-      "Authorization": `Bearer ${TWITTER_API_KEY}:${TWITTER_API_SECRET}`
-    }
-  });
-
+  headers: {
+    "Authorization": `Bearer ${TWITTER_API_KEY}:${TWITTER_API_SECRET}`,
+    "Access-Control-Allow-Origin": "*"
+  }
+});
   // Procesar la respuesta y obtener los temas populares
   const data = await response.json();
   const trends = data[0].trends;
