@@ -16,19 +16,23 @@ async function getTrends() {
   const trends = data[0].trends;
 
   // Mostrar los temas populares en la página web
-const trendsContainer = document.getElementById("trends");
-for (const trend of trends) {
-  const trendElement = document.createElement("div");
-  trendElement.classList.add("trend");
+  const trendsContainer = document.getElementById("trends");
+  trends.forEach(trend => {
+    const trendElement = document.createElement("div");
+    trendElement.classList.add("trend");
 
-  const trendName = document.createElement("h2");
-  trendName.textContent = trend.name;
-  trendElement.appendChild(trendName);
+    const trendName = document.createElement("h2");
+    trendName.textContent = trend.name;
+    trendElement.appendChild(trendName);
 
-  const trendTweetVolume = document.createElement("p");
-  trendTweetVolume.textContent = `Tweet volume: ${trend.tweet_volume}`;
-  trendElement.appendChild(trendTweetVolume);
+    const trendTweetVolume = document.createElement("p");
+    trendTweetVolume.textContent = `Tweet volume: ${trend.tweet_volume}`;
+    trendElement.appendChild(trendTweetVolume);
 
-  trendsContainer.appendChild(trendElement);
-}}
-// fin de codigo
+    trendsContainer.appendChild(trendElement);
+  });
+}
+
+// Obtener los temas populares al cargar la página
+document.addEventListener("DOMContentLoaded", getTrends);
+// final de código
