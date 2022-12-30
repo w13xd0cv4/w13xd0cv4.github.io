@@ -9,7 +9,7 @@ async function getTrends() {
     headers: {
       "Authorization": `Bearer ${TWITTER_API_KEY}:${TWITTER_API_SECRET}`
     }
-  });
+  })};
 
   // Procesar la respuesta y obtener los temas populares
   const data = await response.json();
