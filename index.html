@@ -1,12 +1,87 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Twitter Trends</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>El Comercio</title>
+  <style>
+    /* Add some styling for the header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+    }
+    header a {
+      color: #fff;
+      text-decoration: none;
+    }
+    header img {
+      height: 50px;
+      margin: 0;
+    }
+    /* Add some styling for the main content area */
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 10px;
+    }
+    /* Add some styling for the news articles */
+    .article {
+      width: 300px;
+      margin: 10px;
+      box-sizing: border-box;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .article img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .article h2 {
+      margin: 10px;
+      font-size: 20px;
+    }
+    .article p {
+      margin: 10px;
+      font-size: 16px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Twitter Trends in Mexico</h1>
-  <div id="trends"></div>
-  <script src="script.js"></script>
+  <header>
+    <a href="/"><img src="/logo.png" alt="El Comercio logo"></a>
+    <nav>
+      <a href="/noticias">Noticias</a>
+      <a href="/deportes">Deportes</a>
+      <a href="/entretenimiento">Entretenimiento</a>
+      <a href="/tecnologia">Tecnología</a>
+      <a href="/opinion">Opinión</a>
+    </nav>
+  </header>
+  <main>
+    <article class="article">
+      <img src="/article1.jpg" alt="Article 1 image">
+      <h2>Article 1 headline</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam auctor tellus at ipsum dictum, non efficitur ipsum pulvinar. Aenean lacinia, quam eu placerat congue, ipsum ligula iaculis quam, in congue orci velit vel purus. Suspendisse non semper diam. Suspendisse in tempus libero.</p>
+    </article>
+    <article class="article">
+      <img src="/article2.jpg" alt="Article 2 image">
+      <h2>Article 2 headline</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam auctor tellus at ipsum dictum, non efficitur ipsum pulvinar. Aenean lacinia, quam eu placerat congue, ipsum ligula iaculis quam, in congue orci velit vel purus. Suspendisse non semper diam. Suspendisse in tempus libero.</p>
+    </article>
+    <article class="article">
+      <img src="/article3.jpg" alt="Article 3 image">
+      <h2>Article 3 headline</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam auctor tellus at ipsum dictum, non efficitur ipsum pulvinar. Aenean lacinia, quam eu placerat congue, ipsum ligula iaculis quam, in congue orci velit vel purus. Suspendisse non semper diam. Suspendisse in tempus libero.</p>
+    </article>
+    <article class="article">
+      <img src="/article4.jpg" alt="Article 4 image">
+      <h2>Article 4 headline</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam auctor tellus at ipsum dictum, non efficitur ipsum pulvinar. Aenean lacinia, quam eu placerat congue, ipsum ligula iaculis quam, in congue orci velit vel purus. Suspendisse non semper diam. Suspendisse in tempus libero.</p>
+    </article>
+  </main>
 </body>
 </html>
